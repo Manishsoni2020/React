@@ -1,19 +1,17 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
-import Header from './Header.jsx'
-import Footer from './Footer.jsx'
+import  './App.css'
+// import Header from './Header.jsx'
+// import Footer from './Footer.jsx'
+import Headername from './Headername.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <h1>Manish Soni</h1>
-      <Header/>
-      <Footer/>
-      <Footer/>
+      <h1>this is h1 tag</h1>
     </>
   )
   
