@@ -2,16 +2,29 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import  './App.css'
-// import Header from './Header.jsx'
-// import Footer from './Footer.jsx'
-import Headername from './Headername.jsx'
+import Header from './Header.jsx'
+import Footer from './Footer.jsx'
+import Home from './Home.jsx'
+import About from './About.jsx'
+import Contact from './Contact.jsx'
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <h1>this is h1 tag</h1>
+      {/* <Header/>
+      <Home/>
+      <About/>
+      <Contact/>
+      <Footer/> */
+      <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/ab' element={<About/>}/>
+        <Route path='/con' element={<Contact/>}/>
+      </Routes>
+      </BrowserRouter>
+      }
     </>
   )
   
