@@ -7,6 +7,7 @@ import Footer from './Footer.jsx'
 import Home from './Home.jsx'
 import About from './About.jsx'
 import Contact from './Contact.jsx'
+import Calculater from './Calculater.jsx'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/ab' element={<About/>}/>
         <Route path='/con' element={<Contact/>}/>
+        <Route path='cal' element={<Calculater/>}/>
       </Routes>
       </BrowserRouter>
       }
