@@ -8,6 +8,7 @@ import Home from './Home.jsx'
 import About from './About.jsx'
 import Contact from './Contact.jsx'
 import Calculater from './Calculater.jsx'
+import Form from './Form.jsx'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path='/ab' element={<About/>}/>
         <Route path='/con' element={<Contact/>}/>
         <Route path='cal' element={<Calculater/>}/>
+        <Route path='form' element={<Form/>}/>
       </Routes>
       </BrowserRouter>
       }
