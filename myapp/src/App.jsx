@@ -25,7 +25,7 @@ function App() {
         <Route path='/ab' element={<About/>}/>
         <Route path='/con' element={<Contact/>}/>
         <Route path='cal' element={<Calculater/>}/>
-        <Route path='form' element={<Form/>}/>
+        <Route path='/form' element={<Form/>}/>
       </Routes>
       </BrowserRouter>
       }
