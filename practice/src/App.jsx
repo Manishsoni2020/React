@@ -5,6 +5,7 @@ import Signup from './Signup.jsx'
 import Signin from './Signin.jsx'
 import Notfound from './Notfound.jsx'
 import Home from './Home.jsx'
+import ApiFatch from './ApiFatch.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,6 +18,7 @@ function App() {
         <Route path='/Home' element={<Home/>}/>
         <Route path='/Signup' element={<Signup/>}/>
         <Route path='/Signin' element={<Signin/>}/>
+        <Route path='ApiFatch' element={<ApiFatch/>}/>
         <Route path='*' element={<Notfound/>}/>
       </Routes>
       </BrowserRouter>
