@@ -3,6 +3,7 @@ import axios from 'axios';
 
 const ApiFatch = () => {
     const[data,setData]=useState();
+    const[loading,SetLoading]=useState(true);
     useEffect(()=>{
         fetch();
     },[])
@@ -13,8 +14,12 @@ const ApiFatch = () => {
         setData(result.data);
         
     }
+    const update=()=>{
+      SetLoading(!loading)
+    }
   return (
     <div>
+      <button onClick={update}>Click me</button>
       {data && data.map((index,item)=>
       <div key={item}>
         <p>Title :- {index.title}</p>
