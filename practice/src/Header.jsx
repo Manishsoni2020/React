@@ -15,6 +15,8 @@ const Header = () => {
       <Link style={{margin:'20px'}} to={'/Api2'}>ApiFatch2</Link>
       <Link style={{margin:'20px'}} to={'/Api3'}>ApiFatch3</Link>
       <Link style={{margin:'20px'}} to={'/Api4'}>ApiFatch4</Link>
+      <Link style={{margin:'20px'}} to={'/Api5'}>ApiFatch5</Link>
+      <Link style={{margin:'20px'}} to={'/TestApi'}>TestApi</Link>
       <button onClick={hanldelogout}>Logout</button>
     </div>
   )

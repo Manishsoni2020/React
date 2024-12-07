@@ -8,7 +8,9 @@ import Home from './Home.jsx'
 import ApiFatch from './ApiFatch.jsx'
 import Api2 from './Api2.jsx'
 import Api3 from './Api3.jsx'
-import Api4 from './Api4.jsx';
+import Api4 from './Api4.jsx'
+import Api5 from './Api5.jsx';
+import TestApi from './TestApi.jsx';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -25,6 +27,8 @@ function App() {
         <Route path='/Api2' element={<Api2/>}/>
         <Route path='/Api3' element={<Api3/>}/>
         <Route path='/Api4' element={<Api4/>}/>
+        <Route path='/Api5' element={<Api5/>}/>
+        <Route path='/TestApi' element={<TestApi/>}/>
         <Route path='*' element={<Notfound/>}/>
       </Routes>
       </BrowserRouter>
