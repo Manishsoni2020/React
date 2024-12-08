@@ -24,9 +24,12 @@ const TestApi = () => {
 
     const filterData=data.filter((item)=>
     item.title.toLowerCase().includes(search.toLowerCase())
-    
-        
     )
+
+    const detailbtn=(id)=>{
+      console.log(id);
+      
+    }
    
     
   return (
@@ -43,6 +46,7 @@ const TestApi = () => {
         <p>Category:- {item.category}</p>
         <p>Price:- {item.price}</p>
         <img src={item.thumbnail} alt="" />
+        <button onClick={()=> detailbtn(item.id)}>Detail</button>
       </div>
     )}
     </div>
