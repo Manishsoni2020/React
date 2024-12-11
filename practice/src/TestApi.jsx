@@ -5,6 +5,8 @@ const TestApi = () => {
 
     const[data,setData]=useState([]);
     const[search,setSearch]=useState("");
+    const[sort,setSort]=useState([])
+
 
     useEffect(()=>{
         testfetch();
@@ -30,8 +32,16 @@ const TestApi = () => {
       console.log(id);
       
     }
-   
-    
+   const sortedData=[...filterData].sort((a,b)=>{
+    if(sort==='asc')
+      {
+        return a.price-b.price
+      }
+      if(sort==='dsc')
+      {
+        return b.price-a.price
+      }
+   })
   return (
     <div>
         <div>
@@ -39,8 +49,10 @@ const TestApi = () => {
         value={search}
         onChange={(e)=> setSearch(e.target.value)}
         />
+        <button onClick={()=>setSort('asc')}>Low to High</button>
+        <button onClick={()=>setSort('dsc')}>High to Low</button>
         </div>
-      {data && filterData.map((item)=>
+      {data && sortedData.map((item)=>
       <div key={item}>
         <p>Title:- {item.title}</p>
         <p>Category:- {item.category}</p>
