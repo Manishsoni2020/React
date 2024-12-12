@@ -1,5 +1,8 @@
 import axios from 'axios';
 import React,{useState,useEffect} from 'react'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 
 const TestApi = () => {
 
@@ -57,7 +60,14 @@ const TestApi = () => {
         <p>Title:- {item.title}</p>
         <p>Category:- {item.category}</p>
         <p>Price:- {item.price}</p>
-        <img src={item.thumbnail} alt="" />
+        <LazyLoadImage 
+        src={item.thumbnail}
+        effect="blur"
+    wrapperProps={{
+        style: {transitionDelay: "2s"},
+    }}
+        />
+        {/* <img src={item.thumbnail} alt="" /> */}
         <button onClick={()=> detailbtn(item.id)}>Detail</button>
       </div>
     )}
