@@ -6,19 +6,19 @@ const Signin = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const user = JSON.parse(localStorage.getItem('zzzzz'))
-    console.log('>>>>user>>>>', user);
+    const user = JSON.parse(localStorage.getItem('user'))
+    // console.log('>>>>user>>>>', user);
     if (user.email === email && user.password === password) {
       alert("login successfully")
     }
-    else if (user.email != email) {
+    else if (user.email !== email) {
       alert("email is incorrect")
     }
     else {
       alert("password is incorrect")
     }
 
-  }
+  };
   return (
     <div>
       <form onSubmit={handleSubmit}>

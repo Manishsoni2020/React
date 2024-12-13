@@ -10,8 +10,8 @@ const Signup = () => {
     const data1 = {
         email,password,phone,address
     }
-    console.log('>>>>data1>>>>',data1);
-    localStorage.setItem('zzzzz',JSON.stringify(data1));
+    // console.log('>>>>data1>>>>',data1);
+    localStorage.setItem('user',JSON.stringify(data1));
     
 
   };
