@@ -4,6 +4,7 @@ import axios from 'axios';
 const ApiFatch = () => {
     const[data,setData]=useState();
     const[loading,SetLoading]=useState(true);
+    
     useEffect(()=>{
         fetch();
     },[])

@@ -7,14 +7,12 @@ import Home from './Home.jsx';
 
 
 function App() {
-  const message="hello how are you"
-
-
   return (
     <>
      <BrowserRouter>
+     <Header/>
      <Routes>
-      <Route path='/' element={<Home/>}/>
+      <Route path='/Home' element={<Home/>}/>
       <Route path='/header' element={<Header/>}/>
       <Route path='/Footer' element={<Footer/>}/>
      </Routes>

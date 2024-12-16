@@ -4,10 +4,10 @@ const Header = (props) => {
   return (
     <div>
       <h1>I am header </h1>   
-      <Link to={Home.jsx}></Link>
-      <Link to={Footer.jsx}></Link>
+      <Link style={{margin:'20px'}} to={'/Home'}>Home</Link>
+      <Link style={{margin:'20px'}} to={'/Footer'}>Footer</Link>
     </div>
   )
-}
+} 
 
 export default Header
