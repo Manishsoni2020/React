@@ -8,6 +8,7 @@ const Todotest = () => {
       d.preventDefault()
       setTask([...task,{newname}])
       setNewname("")
+      
       console.log(task);
       
     }
