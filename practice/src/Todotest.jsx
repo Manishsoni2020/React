@@ -8,9 +8,7 @@ const Todotest = () => {
       d.preventDefault()
       setTask([...task,{newname}])
       setNewname("")
-      
       console.log(task);
-      
     }
     const removename=(i)=>{  
         let copytask=[...task]
