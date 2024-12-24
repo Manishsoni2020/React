@@ -6,6 +6,7 @@ const Header = (props) => {
       <h1>I am header </h1>   
       <Link style={{margin:'20px'}} to={'/Home'}>Home</Link>
       <Link style={{margin:'20px'}} to={'/Footer'}>Footer</Link>
+      <Link style={{margin:'20px'}} to={'/Inc'}>Increment</Link>
     </div>
   )
 } 

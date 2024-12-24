@@ -8,8 +8,7 @@ const Abc = () => {
   return (
     <div>
       <button onClick={setIsVis}>
-        {isVis?'Hide':'show'}
-        Message
+        {isVis?'Hide ':'show '}Message
       </button>
       {isVis && <p>hello this is toggle message</p>}
     </div>
